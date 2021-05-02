@@ -1,0 +1,26 @@
+Funcionalidades:
+
+1)Menú de interaccion
+2)Teclado con  actualizacion interactiva
+3)Presentacion de mensajes precargados
+4)Envio de reporte a canal
+
+
+
+Metodos a utilizar:
+
+// enviar mensaje a un canal{
+
+1-primero crea un canal en telegrama (por ejemplo, @mychanel)
+
+2-crear un bot de telegram (por ejemplo, @myTestBot) y obtener el token de api para el siguiente paso
+
+3-agrega @myTestBot a tu canal (@mychanel) como usuario administrador
+
+4-use el siguiente código para enviar el mensaje:
+
+   var bot = new TelegramBotClient("api_token_bot");
+        var s = await bot.SendTextMessageAsync("@mychanel", "your_message");
+
+}
+
